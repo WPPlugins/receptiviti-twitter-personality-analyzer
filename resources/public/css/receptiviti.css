@@ -1,0 +1,91 @@
+.r-loading {
+	background-image: url("../images/loading.gif");
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#receptiviti_wrapper {
+	width: 100%;
+	margin: auto;
+	height: auto;
+	min-height: 700px;
+}
+
+#receptiviti_wrapper .r_clear {
+	clear: both;
+}
+
+#receptiviti_text .r_component {
+	padding: 1%;
+	margin-bottom: 2%;
+	background-color: #ffffff;
+}
+
+#receptiviti_error {
+	color: #ff0000;
+}
+
+#receptiviti_graph .jqplot-point-label, #receptiviti_graph .jqplot-yaxis-tick {
+	font-weight: bold;
+}
+
+#receptiviti_wrapper .r_title {
+	font-weight: bold;
+	font-size: 20px;
+}
+
+#receptiviti_wrapper .r_title::after {
+	content: "";
+	width: 100%;
+	display: block;
+	background: #f3f3f4;
+	height: 1.5pt;
+	margin: 5px 0 0 0;
+}
+
+#receptiviti_text {
+	float: right;
+}
+
+#receptiviti_graph, #receptiviti_text {
+	width: 45%;
+	vertical-align: top;
+	margin: 1.5%;
+}
+
+#receptiviti_graph {
+	height: 800px;
+	float: left;
+	background-color: #ffffff;
+	width: 60%;
+}
+
+#receptiviti_text {
+	width: 34%;
+}
+
+#receptiviti_graph::after, #receptiviti_text::after {
+	clear: both;
+}
+
+#receptiviti_snapshot .r_snapshot {
+	margin-top: 10px;
+}
+
+#receptiviti_snapshot .r_snapshot .r_summary {
+	font-weight: bold;
+}
+
+@media all and (max-width: 620px) {
+	#receptiviti_wrapper .r_component {
+		display: block;
+		margin: 5%;
+	}
+
+	#receptiviti_graph, #receptiviti_text {
+		width: 95%;
+		margin: auto;
+		clear: both;
+		float: none;
+	}
+}
